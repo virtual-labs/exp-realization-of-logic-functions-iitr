@@ -1,0 +1,170 @@
+﻿<!doctype html>
+<html>
+    <head>
+
+        <title>jsPlumb - animation demonstration</title>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+        <meta charset="UTF-8">
+  <meta name="description" content="EMF Generation">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <script src="graph.ob.js"></script>
+  <script src="graph_line_use.ob.js"></script>
+        <!--<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">-->
+        <link href="//fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+
+      
+        <link rel="stylesheet" href="demo10.css">
+    </head>
+
+   <body data-demo-id="animation">
+
+  <div id="wrapper" style="position:absolute; border: 2px solid #3385ff; top:0px;width:1300px;height:720px;left:0px">
+<div class="dropdown" style="left:5px; top:2px;">
+    <button onclick="dropdown()" class="dropbtn">INSTRUCTIONS
+    </button>
+     <div id="myDropdown" class="dropdown-content">
+      <a href="#home">  
+                    <b>1) Select and Drag "<img src="littledot.png" width="20" height="20" >" For Generate Wire.</b><br/><br/>
+                    <b>2) Join The Wires To Perform Required Logic.</b><br/><br/>
+                    
+      </a>
+    </div>
+</div>
+
+  <div style="position:absolute; font-size:13px;background-color: #3385ff;top:59px;left:5px;width:410px; height:40px;font-weight: bold;">
+    <p style="text-align:center; color:white;font-family: Verdana"> 
+      <b>Experiment to perform logic of AND Using NAND on kit</b>
+    </p>
+  </div>
+
+   <div style="position:absolute; font-size:13px;background-color: #3385ff;top:130px;left:200px;width:100px; height:30px;font-weight: bold;">
+    <p style="text-align:center; color:white;font-family: Verdana"> 
+      <b>Y=A.B</b>
+    </p>
+  </div>
+    
+
+        <div class="jtk-demo-main" >
+           	<!-- demo -->
+            <div class="jtk-demo-canvas canvas-wide animation-demo jtk-surface jtk-surface-nopan" id="canvas">
+                <div style="position:absolute;left:300px;top:305px;"class="littledot" id="ld1"></br></br><a href="#" class="cmdLink detach" rel="ld1"></a></div>
+                <div style="position:absolute;left:300px;top:345px;"class="littledot" id="ld2"></br></br><a href="#" class="cmdLink detach" rel="ld2"></a></div>
+                <div style="position:absolute;left:420px;top:305px;"class="littledot" id="ld3"></br></br><a href="#" class="cmdLink detach" rel="ld3"></a></div>
+                <div style="position:absolute;left:420px;top:345px;"class="littledot" id="ld4"></br></br><a href="#" class="cmdLink detach" rel="ld4"></a></div>
+                <div style="position:absolute;left:650px;top:325px;"class="littledot" id="ld5"></br></br><a href="#" class="cmdLink detach" rel="ld5"></a></div>
+                <div style="position:absolute;left:725px;top:305px;"class="littledot" id="ld6"></br></br><a href="#" class="cmdLink detach" rel="ld6"></a></div>
+                <div style="position:absolute;left:725px;top:345px;"class="littledot" id="ld7"></br></br><a href="#" class="cmdLink detach" rel="ld7"></a></div>
+
+              
+<img style="position: absolute;left: 200px;top:160px;"id="myImage3" src="redn.jpg" style="width:5px" width="2" height="430">
+<img style="position: absolute;left: 200px;top:160px;"id="myImage3" src="redn.jpg" style="width:5px" width="950" height="2">
+<img style="position: absolute;left: 1150px;top:160px;"id="myImage3" src="redn.jpg" style="width:5px" width="2" height="430">
+<img style="position: absolute;left: 200px;top:590px;"id="myImage3" src="redn.jpg" style="width:5px" width="952" height="2">
+
+
+
+
+
+
+
+
+
+
+
+
+           
+
+
+            <!-- /demo -->
+            <!-- explanation -->
+            </div>
+            <div style= " position:absolute;left:800px;top:595px;">
+            <button style="background: #2eb82e  !important;height:30px; width:65px;" id="check-button" >Check</button>
+            <input style="background: #2eb82e  !important;height:30px; width:65px;" id="reset" type="reset" onclick="window.location.href = 'nand2.html';" value="Reset">
+        </div>
+           </div>
+            <div style="position:absolute;left:935px;top:595px;">
+             <input style= "background: #2eb82e  !important; height:30px; width:65px;" id = "button" type = "button" value = "PRINT" onclick="print()">
+        </div>
+       
+        <div style="position:absolute; left:1000px; top:595px;">
+            <input style="background: #2eb82e  !important;height:30px; width:65px;" id="n" type="button" onclick="window.location.href = 'nand3.html';" value="Next" >
+        </div>
+           
+            <!-- /explanation -->
+        </div>
+         </div>
+         <div style="position:absolute;left:260px;top:273px;">
+  <tr>
+      <td>
+        <p style="position: absolute; left:20px; top:10px"><b>A</b></p> 
+      </td>
+  </tr>
+</div>
+</div>
+         </div>
+         <div style="position:absolute;left:260px;top:315px;">
+  <tr>
+      <td>
+        <p style="position: absolute; left:20px; top:10px"><b>B</b></p> 
+      </td>
+  </tr>
+</div>
+</div>
+         <div style="position:absolute;left:940px;top:293px;">
+  <tr>
+      <td>
+        <p style="position: absolute; left:20px; top:10px"><b>A.B</b></p> 
+      </td>
+  </tr>
+</div>
+
+<img style="position: absolute;left: 430px;top:310px;"id="myImage1" src="redn.jpg" style="width:5px" width="50" height="3">
+<img style="position: absolute;left: 430px;top:350px;"id="myImage1" src="redn.jpg" style="width:5px" width="50" height="3">
+<img style="position: absolute;left: 730px;top:310px;"id="myImage1" src="redn.jpg" style="width:5px" width="50" height="3">
+<img style="position: absolute;left: 730px;top:350px;"id="myImage1" src="redn.jpg" style="width:5px" width="50" height="3">
+
+    <div style="position:absolute;left:780px;top:200px;">
+        <p style="color:blue;font-size: 11px;" align="center"></p>
+          <img src="and2trs.png" width="180" height="230">
+          </div>
+
+   
+
+     <div style="position:absolute;left:480px;top:200px;">
+        <p style="color:blue;font-size: 11px;" align="center"></p>
+          <img src="and2trs.png" width="180" height="230">
+    </div>
+    
+        <!-- JS -->
+        <script src="jsplumb1.js"></script>
+        <!-- /JS -->
+		<!--  demo code -->
+		<script src="demo10.js"></script>
+
+<script>function dropdown() 
+{
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+    </body>
+</html>

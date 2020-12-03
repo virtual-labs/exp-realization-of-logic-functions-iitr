@@ -1,13 +1,268 @@
-<!DOCTYPE html>
 <html>
-<head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-		<!-- Your code goes here-->
+   <head>
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
-</body>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Simulation scripts end-->
+     <style>
+body {font-family: Arial;
+background-color: #ECEFF4;}
+
+
+</style>
+
+
+
+    </head>
+
+    <body class="hold-transition skin-blue sidebar-mini">
+
+      
+            <h2 align="center">Realization of logic functions with the help of universal gates NAND and NOR Gate.
+
+        </h2><br><br>
+            <!-- Write your experiment name -->
+           
+         
+       
+          <h3 align="center">Simulation</h3>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body
+ {
+  background-color: #ECEFF4;
+}
+
+/* Fixed sidenav, full height */
+.sidenav 
+{
+  height: 300px;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 100;
+  left: 100;
+  background-color: #222D32;
+  overflow-x: hidden;
+  padding-top: 10px;
+  box-shadow: 15px 15px 50px grey;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn 
+{
+  padding: 6px 2px 6px 2px;
+  text-decoration: none;
+  font-size: 12px;
+  color: #ECEFF4;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  
+}
+.dropdown-btn 
+{
+ padding-left: 15px;
+}
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover
+ {
+  color: white;
+}
+
+/* Add an active class to the active dropdown button */
+.active1
+{
+  background-color: #111C20;
+  color: #ECEFF4;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container 
+{
+  display: none;
+  background-color:#222D32;
+  padding-left: 18px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down
+ {
+  float: center;
+  padding-right: 8px;
+}
+
+input[type=button]
+ {
+  background-color: #3385ff;
+  border: none;
+  color: white;
+  padding: 6px 26px;
+  text-decoration: none;
+  margin: 2px 2px;
+  cursor: pointer;
+}
+
+#a
+ {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
+img
+ {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
+#wrapper
+  {
+    width:100%;
+  }
+ 
+  .dropbtn
+  {
+    background-color:#3385ff;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  .dropbtn:hover, .dropbtn:focus
+  {
+    background-color: blue;
+  }
+  .dropdown
+  {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content
+  {
+    display: none;
+    position: relative;
+    background-color: lightblue ;
+    min-width: 750px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a 
+  {
+    color: navy;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown a:hover 
+  {
+    background-color: mistyrose;
+  }
+  .show 
+  {
+    display:block;}
+
+</style>
+</head>
+<div id="wrapper" style="position:absolute; border: 2px solid #3385ff; top:220px;width:1090px;height:560px;left:75px;">
+<div class="dropdown" style="left:5px; top:2px;">
+    <button onclick="dropdown()" class="dropbtn">INSTRUCTIONS
+    </button>
+     <div id="myDropdown" class="dropdown-content">
+      <a href="#home">  
+                    <b>1)Select NAND/NOR and their respective options to perform NAND/NOR as universal experiment</b><br/><br/>
+                   
+                    
+      </a>
+    </div>
+</div>
+<div style="position:absolute; font-size:13px;background-color: #3385ff;top:59px;left:5px;width:520px; height:40px;font-weight: bold;">
+    <p style="text-align:center; color:white;font-family: Verdana"> 
+      <b>Experiment to perform logic of NAND and NOR as universal gate  on kit</b>
+    </p>
+  </div>
+
+<div class="sidenav" style="position: absolute;left:200px;top: 200px;">
+  <a href="#about"><img id="a" src="images/All gates/Nandnew1.png" height="100" width="160" ></a>
+  <button class="dropdown-btn ">NAND as universal
+    <i class="fa fa-caret-down"></i>
+  </button>
+   <div class="dropdown-container">
+    <a href="images/All gates/nand1.html" target="_blank">NAND as OR</a>
+    <a href="images/All gates/nand2.html" target="_blank">NAND as AND</a>
+    <a href="images/All gates/nand3.html" target="_blank">NAND as Ex-OR</a>
+    <a href="images/All gates/nand4.html" target="_blank">NAND as Ex-NOR</a>
+    <a href="images/All gates/nand5.html" target="_blank">Solving expression using NAND</a>
+  </div>
+
+</div>
+
+<div class="sidenav" style="position: absolute;left:600px;top: 200px;">
+  <a href="#about"><img id="a" src="images/All gates/nor1.png" height="100" width="160"></a>
+  <button class="dropdown-btn">NOR as universal
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="images/All gates/nor1.html" target="_blank">NOR as OR</a>
+    <a href="images/All gates/nor2.html" target="_blank">NOR as AND</a>
+    <a href="images/All gates/nor3.html" target="_blank">NOR as Ex-OR</a>
+    <a href="images/All gates/nor4.html" target="_blank">NOR as Ex-NOR</a>
+    <a href="images/All gates/nor5.html" target="_blank">Solving expression using NOR</a>
+  </div>
+</div>  
+</div>
+<p style="font-size:130%; margin-top:46.5%">  
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active1");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+<script>function dropdown() 
+{
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+       
+    </body>
 </html>
+

@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+    <head>
+
+        <title>Ex-NOR using nor gate</title>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <meta charset="UTF-8">
+  <meta name="description" content="EMF Generation">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <script src="graph.ob.js"></script>
+  <script src="graph_line_use.ob.js"></script>
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+
+        <!--<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">-->
+        <link href="//fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+
+      
+        <link rel="stylesheet" href="demo4.css">
+    </head>
+
+   <body data-demo-id="animation">
+    
+  <div id="wrapper" style="position:absolute; border: 2px solid #3385ff; top:0px;width:1400px;height:820px;left:0px">
+<div class="dropdown" style="left:5px; top:2px;">
+    <button onclick="dropdown()" class="dropbtn">INSTRUCTIONS
+    </button>
+     <div id="myDropdown" class="dropdown-content">
+      <a href="#home">  
+                    <b>1) Select and drag "<img src="littledot.png" width="20" height="20" >" For generate wire.</b><br/><br/>
+                    <b>2) Join the wires to perform required logic.</b><br/><br/>
+                    
+      </a>
+    </div>
+</div>
+
+  <div style="position:absolute; font-size:13px;background-color: #3385ff;top:59px;left:5px;width:410px; height:40px;font-weight: bold;">
+    <p style="text-align:center; color:white;font-family: Verdana"> 
+      <b>Experiment to perform logic of Ex-NOR Using Nor on kit</b>
+    </p>
+  </div>
+    <div style="position:absolute; font-size:13px;background-color: #3385ff;top:130px;left:100px;width:290px; height:30px;font-weight: bold;">
+    <p style="text-align:center; color:white; font-color:white; font-family: Verdana"> 
+      <b>Y=[(A+(A+B)')'+(B+(A+B)')']'</b>
+    </p>
+  </div>
+
+        <div class="jtk-demo-main" >
+            <!-- demo -->
+            <div class="jtk-demo-canvas canvas-wide animation-demo jtk-surface jtk-surface-nopan" id="canvas">
+                <div class="littledot" id="ld1"></br></br><a href="#" class="cmdLink detach" rel="ld1">A</a></div>
+                <div class="littledot" id="ld2"></br></br><a href="#" class="cmdLink detach" rel="ld2"></a></div>
+
+                <div class="littledot" id="ld3"></br></br><a href="#" class="cmdLink detach" rel="ld3"></a></div>
+                <div class="littledot" id="ld4"></br></br><a href="#" class="cmdLink detach" rel="ld4">B</a></div>
+                <div class="littledot" id="ld5"></br></br><a href="#" class="cmdLink detach" rel="ld5"></a></div>
+                <div class="littledot" id="ld6"></br></br><a href="#" class="cmdLink detach" rel="ld6"></a></div>
+                <div class="littledot" id="ld7"></br></br><a href="#" class="cmdLink detach" rel="ld7"></a></div>
+                <div class="littledot" id="ld8"></br></br><a href="#" class="cmdLink detach" rel="ld8"></a></div>
+                <div class="littledot" id="ld9"></br></br><a href="#" class="cmdLink detach" rel="ld9"></a></div>
+                <div class="littledot" id="ld10"></br></br><a href="#" class="cmdLink detach" rel="ld10"></a></div>
+
+                <div class="littledot" id="ld11"></br></br><a href="#" class="cmdLink detach" rel="ld11"></a></div>
+                <div class="littledot" id="ld12"></br></br><a href="#" class="cmdLink detach" rel="ld12"></a></div>
+
+                <div class="littledot" id="ld13"></br></br><a href="#" class="cmdLink detach" rel="ld13"></a></div>
+
+                
+<img style="position: absolute;left: 100px;top:160px;"id="myImage3" src="redn.jpg" style="width:5px" width="2" height="530">
+<img style="position: absolute;left: 100px;top:160px;"id="myImage3" src="redn.jpg" style="width:5px" width="1190" height="2">
+<img style="position: absolute;left: 1290px;top:160px;"id="myImage3" src="redn.jpg" style="width:5px" width="2" height="530">
+<img style="position: absolute;left: 100px;top:690px;"id="myImage3" src="redn.jpg" style="width:5px" width="1192" height="2">
+
+                
+
+            <!-- /demo -->
+            <!-- explanation -->
+           
+            <!-- /explanation -->
+        </div>
+                         <div style= " position:absolute;left:800px;top:695px;">
+            <button style="background: #2eb82e  !important;height:30px; width:65px;" id="check-button" >Check</button>
+            <input style="background: #2eb82e  !important;height:30px; width:65px;" id="reset" type="reset" onclick="window.location.href = 'nor4.html';" value="Reset">
+        </div>
+           </div>
+            <div style="position:absolute;left:935px;top:695px;">
+             <input style= "background: #2eb82e  !important; height:30px; width:65px;" id = "button" type = "button" value = "PRINT" onclick="print()">
+        </div>
+         
+        <div style="position:absolute; left:1000px; top:695px;">
+            <input style="background: #2eb82e  !important;height:30px; width:65px;" id="n" type="button" onclick="window.location.href = 'nor5.html';" value="Next" >
+        </div>
+
+<div style="position:absolute;left:960px;top:380px;">
+
+        <p>Y=[(A+(A+B)')'+(B+(A+B)')']'</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            <div style="position:absolute;left:480px;top:150px;">
+        <p style="color:blue;font-size: 11px;" align="center"></p>
+          <img src="nor1.png" width="200" height="150">
+    </div>
+
+    <div style="position:absolute;left:500px;top:520px;">
+        <p style="color:blue;font-size: 11px;" align="center"></p>
+          <img src="nor1.png" width="200" height="150">
+    </div>
+
+<div style="position:absolute;left:790px;top:350px;">
+        <p style="color:blue;font-size: 11px;" align="center"></p>
+          <img src="nor1.png" width="200" height="150">
+    </div>
+
+<div style="position:absolute;left:220px;top:350px;">
+        <p style="color:blue;font-size: 11px;" align="center"></p>
+          <img src="nor1.png" width="200" height="150">
+    </div>
+
+
+</div>
+
+<script>function dropdown() 
+{
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+        <!-- JS -->
+        <script src="jsplumb1.js"></script>
+        <!-- /JS -->
+        <!--  demo code -->
+        <script src="demo4.js"></script>
+
+
+
+    </body>
+</html>

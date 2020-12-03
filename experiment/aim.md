@@ -1,1 +1,1 @@
-### Aim of the experiment
+#### To implement the logic functions i.e. AND, OR, NOT, Ex-OR, Ex- NOR and a logical expression with the help of NAND and NOR universal gates respectively.

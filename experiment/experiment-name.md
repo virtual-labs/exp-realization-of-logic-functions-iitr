@@ -1,1 +1,1 @@
-## Experiment name
+## Realization of logic functions with the help of universal gates NAND and NOR Gate

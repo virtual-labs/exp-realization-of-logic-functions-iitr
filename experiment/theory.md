@@ -50,8 +50,8 @@ Ex-NOR gate is actually Ex-OR gate followed by NOT gate. So give the output of E
 #### 1.5) Implementing the simplified function with NAND gates only
 We can now start constructing the circuit. First note that the entire expression is inverted and we have three terms ANDed. This means that we must use a 3-input NAND gate. Each of the three terms is, itself, a NAND expression. Finally, negated single terms can be generates with a 2-input NAND gate acting as an inverted. The expression illustrates a circuit using NAND gates only.<br>
 <br><center><b>F=((C'.B.A)'(D'.C.A)'(C.B'.A)')' </b> </center><br><br>
-The stepwise simplication of this expression is done on the basis of this logic diagram in Figure 9: <br>
-<center><img src="images/gate/nand6.png"  align="center" width="580" height="280"> <br> <b>Figure-9:Implementing the simplified function with NAND gates only</b></center><br>
+The stepwise simplication of this expression is done on the basis of this logic diagram in Figure 9: <br> <br>
+<center><img src="images/gate/nand6.png"  align="center" width="580" height="280"> <br> <br> <b>Figure-9:Implementing the simplified function with NAND gates only</b></center><br>
 
 
 </b></p> 

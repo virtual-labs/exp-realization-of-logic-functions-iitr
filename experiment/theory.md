@@ -48,10 +48,10 @@ Ex-NOR gate is actually Ex-OR gate followed by NOT gate. So give the output of E
 <br>
 
 #### 1.5) Implementing the simplified function with NAND gates only
-We can now start constructing the circuit. First note that the entire expression is inverted and we have three terms ANDed. This means that we must use a 3-input NAND gate. Each of the three terms is, itself, a NAND expression. Finally, negated single terms can be generates with a 2-input NAND gate acting as an inverted. Figure 8 illustrates a circuit using NAND gates only.<br>
+We can now start constructing the circuit. First note that the entire expression is inverted and we have three terms ANDed. This means that we must use a 3-input NAND gate. Each of the three terms is, itself, a NAND expression. Finally, negated single terms can be generates with a 2-input NAND gate acting as an inverted. The expression illustrates a circuit using NAND gates only.<br>
 <br><center><b>F=((C'.B.A)'(D'.C.A)'(C.B'.A)')' </b> </center><br><br>
-
-<center><img src="images/gate/nand6.png"  align="center" width="580" height="280"> <br> <b>Figure-9:Implementing the simplified function with NAND gates only</b></center><br>
+The stepwise simplication of this expression is done on the basis of this logic diagram in Figure 9: <br> <br>
+<center><img src="images/gate/nand6.png"  align="center" width="580" height="280"> <br> <br> <b>Figure-9:Implementing the simplified function with NAND gates only</b></center><br>
 
 
 </b></p> 
@@ -76,7 +76,7 @@ From DeMorgan’s theorems: <br>(A+B)’ = A’B’<br>(A’+B’)’ = A’’B
 <center><img src="images/gate/nandt2.png" align="center" width="325" height="210"> <br><b>Figure-13:Truth table of AND</b><br></center>
 
 
-#### 2.4)NOR gates as Ex-OR gate
+#### 2.3)NOR gates as Ex-OR gate
 Ex-OR gate is actually Ex-NOR gate followed by NOT gate. So give the output of Ex-NOR gate to a NOT gate, overall output is that of an Ex-OR gate.<br>Y = A’B+ AB’</center><br>
 
 <center><img src="images/gate/nor5.png" align="center" width="380" height="200"> <br><b>Figure-14:NOR gates as Ex-OR gate</b></center><br>
@@ -84,10 +84,10 @@ Ex-OR gate is actually Ex-NOR gate followed by NOT gate. So give the output of E
 
 
 
-#### 2.3)NOR gates as Ex-NOR gate
+#### 2.4)NOR gates as Ex-NOR gate
 The output of a two input Ex-NOR gate is shown by: Y = AB + A’B’. This can be achieved with the logic diagram shown in the left side.<br>
 
-<center><img src="images/gate/ex2.PNG" align="center" width="500" height="400"> 
+<center><img src="images/gate/ex2.PNG" align="center" width="500" height="400"> </center>
 <center><img src="images/gate/nor4.png" align="center" width="380" height="200">  <br><b>Figure-16:NOR gates as Ex-NOR gate </b></center><br>
 
 
@@ -97,7 +97,7 @@ The output of a two input Ex-NOR gate is shown by: Y = AB + A’B’. This can b
 
 
 #### 2.5)Constructing a circuit with NOR gates only
-Designing a circuit with NOR gates only uses the same basic techniques as designing a circuit with NAND gates; that is, the application of deMorgan’s theorem. The only difference between NOR gate design and NAND gate design is that the former must eliminate product terms and the later must eliminate sum terms.<br><b>F=(((C.B'.A)+(D.C'.A)+(C.B'.A))')'  </b></center><br>
+Designing a circuit with NOR gates only uses the same basic techniques as designing a circuit with NAND gates; that is, the application of deMorgan’s theorem. The only difference between NOR gate design and NAND gate design is that the former must eliminate product terms and the later must eliminate sum terms.<br><center><b>F=(((C.B'.A)+(D.C'.A)+(C.B'.A))')'  </b></center><br>
 
 <center><img src="images/gate/nor6.png" align="center" width="580" height="300"> <br>
  <b>Figure-18:Implementing the simplified function with NOR gates only</b></center> <br>

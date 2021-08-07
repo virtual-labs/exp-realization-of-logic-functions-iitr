@@ -1,0 +1,411 @@
+﻿<!doctype html>
+<html>
+    <head>
+
+        <title>jsPlumb - animation demonstration</title>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+        <meta charset="UTF-8">
+  <meta name="description" content="EMF Generation">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <script src="graph.ob.js"></script>
+  <script src="graph_line_use.ob.js"></script>
+        <!--<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">-->
+        <link href="//fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+
+      
+        <link rel="stylesheet" href="demo13.css">
+
+
+        <style>
+
+
+          body{
+
+            -moz-transform: scale(0.85, 0.85); /* Moz-browsers */
+    zoom: 0.85; /* Other non-webkit browsers */
+    zoom: 85%; /* Webkit browsers */
+          }
+      </style>
+    </head>
+
+   <body data-demo-id="animation">
+
+    <div id="wrapper" style="position:absolute; border: 2px solid #3385ff; top:0px;width:1300px;height:720px;left:0px">
+<div class="dropdown" style="left:5px; top:2px;">
+    <button onclick="dropdown()" class="dropbtn">INSTRUCTIONS
+    </button>
+     <div id="myDropdown" class="dropdown-content">
+      <a href="#home">  
+                   <b>1) Select and Drag "<img src="littledot.png" width="20" height="20" >" For Generate Wire.</b><br/><br/>
+                    <b>2) Join The Wires To Perform Required Logic.</b><br/><br/>
+                    <b>3) Click on check button to check the connections.</b><br/><br/>
+                    <b>4) If connections are wrong click on reset button to reset connections.</b><br/><br/>
+                    
+    </div>
+</div>
+
+  <div style="position:absolute; font-size:13px;background-color: #3385ff;top:59px;left:5px;width:450px; height:40px;font-weight: bold;">
+    <p style="text-align:center; color:white;font-family: Verdana"> 
+      <b>Experiment to perform logic of Expression Using Nand on kit</b>
+    </p>
+  </div>
+
+    <div style="position:absolute; font-size:13px;background-color: #3385ff;top:120px;left:200px;width:170px; height:30px;font-weight: bold;">
+
+    <p style="text-align:center; color:white; font-color:white; font-family: Verdana"> 
+      <b>F=(C&#773;BA).(D&#773;CA).(CB&#773;A)</b>
+    </p>
+  </div>
+    
+
+        <div class="jtk-demo-main" >
+           	<!-- demo -->
+            <div class="jtk-demo-canvas canvas-wide animation-demo jtk-surface jtk-surface-nopan" id="canvas">
+                <div style="position:absolute;left:300px;top:175px;"class="littledot" id="ld1"></br></br><a href="#" class="cmdLink detach" rel="ld1"></a></div>
+                <div style="position:absolute;left:300px;top:210px;"class="littledot" id="ld2"></br></br><a href="#" class="cmdLink detach" rel="ld2"></a></div>
+                <div style="position:absolute;left:300px;top:245px;"class="littledot" id="ld3"></br></br><a href="#" class="cmdLink detach" rel="ld3"></a></div>
+                <div style="position:absolute;left:300px;top:375px;"class="littledot" id="ld4"></br></br><a href="#" class="cmdLink detach" rel="ld4"></a></div>
+                 <div style="position:absolute;left:400px;top:167px;"class="littledot" id="ld5"></br></br><a href="#" class="cmdLink detach" rel="ld5"></a></div>
+                 <div style="position:absolute;left:400px;top:193px;"class="littledot" id="ld6"></br></br><a href="#" class="cmdLink detach" rel="ld6"></a></div>
+                  <div style="position:absolute;left:400px;top:365px;"class="littledot" id="ld7"></br></br><a href="#" class="cmdLink detach" rel="ld7"></a></div>
+                <div style="position:absolute;left:400px;top:393px;"class="littledot" id="ld8"></br></br><a href="#" class="cmdLink detach" rel="ld8"></a></div>
+                <div style="position:absolute;left:400px;top:523px;"class="littledot" id="ld9"></br></br><a href="#" class="cmdLink detach" rel="ld9"></a></div>
+                <div style="position:absolute;left:400px;top:550px;"class="littledot" id="ld10"></br></br><a href="#" class="cmdLink detach" rel="ld10"></a></div>
+                 
+                  <div style="position:absolute;left:560px;top:208px;"class="littledot" id="ld11"></br></br><a href="#" class="cmdLink detach" rel="ld11"></a></div>
+                  <div style="position:absolute;left:560px;top:242px;"class="littledot" id="ld12"></br></br><a href="#" class="cmdLink detach" rel="ld12"></a></div>
+                  <div style="position:absolute;left:560px;top:278px;"class="littledot" id="ld13"></br></br><a href="#" class="cmdLink detach" rel="ld13"></a></div>
+
+
+                  <div style="position:absolute;left:560px;top:353px;"class="littledot" id="ld14"></br></br><a href="#" class="cmdLink detach" rel="ld14"></a></div>
+                  <div style="position:absolute;left:560px;top:383px;"class="littledot" id="ld15"></br></br><a href="#" class="cmdLink detach" rel="ld15"></a></div>
+                  <div style="position:absolute;left:560px;top:415px;"class="littledot" id="ld16"></br></br><a href="#" class="cmdLink detach" rel="ld16"></a></div>
+
+
+                   <div style="position:absolute;left:560px;top:500px;"class="littledot" id="ld17"></br></br><a href="#" class="cmdLink detach" rel="ld17"></a></div>
+                  <div style="position:absolute;left:560px;top:532px;"class="littledot" id="ld18"></br></br><a href="#" class="cmdLink detach" rel="ld18"></a></div>
+                  <div style="position:absolute;left:560px;top:565px;"class="littledot" id="ld19"></br></br><a href="#" class="cmdLink detach" rel="ld19"></a></div>
+
+                  
+                  <div style="position:absolute;left:790px;top:353px;"class="littledot" id="ld20"></br></br><a href="#" class="cmdLink detach" rel="ld20"></a></div>
+                  <div style="position:absolute;left:790px;top:383px;"class="littledot" id="ld21"></br></br><a href="#" class="cmdLink detach" rel="ld21"></a></div>
+                  <div style="position:absolute;left:790px;top:413px;"class="littledot" id="ld22"></br></br><a href="#" class="cmdLink detach" rel="ld22"></a></div>
+
+                  <div style="position:absolute;left:500px;top:180px;"class="littledot" id="A"></br></br><a href="#" class="cmdLink detach" rel="A"></a></div>
+
+                 <div style="position:absolute;left:500px;top:382px;"class="littledot" id="B"></br></br><a href="#" class="cmdLink detach" rel="B"></a></div>
+
+                 <div style="position:absolute;left:500px;top:537px;"class="littledot" id="C"></br></br><a href="#" class="cmdLink detach" rel="C"></a></div>
+
+                 <div style="position:absolute;left:735px;top:240px;"class="littledot" id="D"></br></br><a href="#" class="cmdLink detach" rel="D"></a></div>
+
+                 <div style="position:absolute;left:725px;top:382px;"class="littledot" id="E"></br></br><a href="#" class="cmdLink detach" rel="E"></a></div>
+
+                 <div style="position:absolute;left:725px;top:532px;"class="littledot" id="F"></br></br><a href="#" class="cmdLink detach" rel="F"></a></div>
+
+
+              
+           <img style="position: absolute;left: 200px;top:150px;"id="myImage3" src="redn.jpg" style="width:5px" width="2" height="440">
+<img style="position: absolute;left: 200px;top:150px;"id="myImage3" src="redn.jpg" style="width:5px" width="950" height="2">
+<img style="position: absolute;left: 1150px;top:150px;"id="myImage3" src="redn.jpg" style="width:5px" width="2" height="440">
+<img style="position: absolute;left: 200px;top:590px;"id="myImage3" src="redn.jpg" style="width:5px" width="952" height="2">
+
+<img style="position: absolute;left: 230px;top:129px;"id="myImage3" src="whiteline.png" style="width:5px" width="130" height="1">
+<img style="position: absolute;left: 230px;top:132px;"id="myImage3" src="whiteline.png" style="width:5px" width="40" height="1">
+<img style="position: absolute;left: 280px;top:132px;"id="myImage3" src="whiteline.png" style="width:5px" width="30" height="1">
+<img style="position: absolute;left: 330px;top:132px;"id="myImage3" src="whiteline.png" style="width:5px" width="30" height="1">
+                
+
+                
+           
+
+
+            <!-- /demo -->
+            <!-- explanation -->
+
+           
+            <!-- /explanation -->
+        </div>
+         </div>
+
+
+         <div style="position:absolute;left:560px;top:193px;">
+  <tr>
+      <td>
+        <p style="position: absolute; left:20px; top:10px;font-size: 15px;"><b>C&#773;</b></p> 
+      </td>
+  </tr>
+</div>
+</div>
+
+<div style="position:absolute;left:563px;top:229px;">
+  <tr>
+      <td>
+        <p style="position: absolute; left:20px; top:10px;font-size: 15px;"><b>B</b></p> 
+      </td>
+  </tr>
+</div>
+</div>
+
+<div style="position:absolute;left:563px;top:265px;">
+  <tr>
+      <td>
+        <p style="position: absolute; left:20px; top:10px;font-size: 15px;"><b>A</b></p> 
+      </td>
+  </tr>
+</div>
+</div>
+
+<div style="position:absolute;left:563px;top:338px;">
+  <tr>
+      <td>
+        <p style="position: absolute; left:20px; top:10px;font-size: 15px;"><b>A</b></p> 
+      </td>
+  </tr>
+</div>
+</div>
+
+<div style="position:absolute;left:563px;top:368px;">
+  <tr>
+      <td>
+        <p style="position: absolute; left:20px; top:10px;font-size: 15px;"><b>C</b></p> 
+      </td>
+  </tr>
+</div>
+</div>
+
+
+<div style="position:absolute;left:262px;top:145px;">
+  <tr>
+      <td>
+        <p style="position: absolute; left:20px; top:10px;"><b>C</b></p> 
+      </td>
+  </tr>
+</div>
+</div>
+
+<div style="position:absolute;left:262px;top:180px;">
+  <tr>
+      <td>
+        <p style="position: absolute; left:20px; top:10px;"><b>B</b></p> 
+      </td>
+  </tr>
+</div>
+</div>
+
+<div style="position:absolute;left:262px;top:216px;">
+  <tr>
+      <td>
+        <p style="position: absolute; left:20px; top:10px;"><b>A</b></p> 
+      </td>
+  </tr>
+</div>
+</div>
+
+<div style="position:absolute;left:262px;top:347px;">
+  <tr>
+      <td>
+        <p style="position: absolute; left:20px; top:10px;"><b>D</b></p> 
+      </td>
+  </tr>
+</div>
+</div>
+
+<div style="position:absolute;left:563px;top:400px;">
+  <tr>
+      <td>
+        <p style="position: absolute; left:20px; top:10px;font-size: 15px;"><b>D&#773;</b></p> 
+      </td>
+  </tr>
+</div>
+</div>
+
+<div style="position:absolute;left:563px;top:487px;">
+  <tr>
+      <td>
+        <p style="position: absolute; left:20px; top:10px;font-size: 15px;"><b>A</b></p> 
+      </td>
+  </tr>
+</div>
+</div>
+
+<div style="position:absolute;left:563px;top:520px;">
+  <tr>
+      <td>
+        <p style="position: absolute; left:20px; top:10px;font-size: 15px;"><b>C</b></p> 
+      </td>
+  </tr>
+</div>
+</div>
+
+<div style="position:absolute;left:563px;top:550px;">
+  <tr>
+      <td>
+        <p style="position: absolute; left:20px; top:10px;font-size: 15px;"><b>B&#773;</b></p> 
+      </td>
+  </tr>
+</div>
+</div>
+
+
+
+ <div style="position:absolute;left:480px;top:332px;">
+  <tr>
+      <td>
+        <p style="position: absolute; left:20px; top:10px"><b>D&#773;</b></p> 
+      </td>
+  </tr>
+</div>
+</div>
+
+<div style="position:absolute;left:482px;top:490px;">
+  <tr>
+      <td>
+        <p style="position: absolute; left:20px; top:10px;"><b>B&#773;</b></p> 
+      </td>
+  </tr>
+</div>
+</div>
+
+
+
+                        <div style= " position:absolute;left:800px;top:595px;">
+            <button style="background: #2eb82e  !important;height:30px; width:65px;" id="check-button" >Check</button>
+            <input style="background: #2eb82e  !important;height:30px; width:65px;" id="reset" type="reset" onclick="window.location.href = 'nand5.html';" value="Reset">
+        </div>
+           </div>
+            <div style="position:absolute;left:935px;top:595px;">
+             <input style= "background: #2eb82e  !important; height:30px; width:65px;" id = "button" type = "button" value = "PRINT" onclick="print()">
+        </div>
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+   
+         <div style="position:absolute;left:820px;top:463px;">
+ 
+        <p>(C&#773;BA).(D&#773;CA).(CB&#773;A)</p>
+</div>
+
+
+<img style="position: absolute;left: 565px;top:215px;"id="myImage1" src="redn.jpg" style="width:5px" width="35" height="3">
+<img style="position: absolute;left: 565px;top:250px;"id="myImage1" src="redn.jpg" style="width:5px" width="35" height="3">
+<img style="position: absolute;left: 565px;top:285px;"id="myImage1" src="redn.jpg" style="width:5px" width="35" height="3">
+
+
+<img style="position: absolute;left: 565px;top:360px;"id="myImage1" src="redn.jpg" style="width:5px" width="35" height="3">
+<img style="position: absolute;left: 565px;top:390px;"id="myImage1" src="redn.jpg" style="width:5px" width="35" height="3">
+<img style="position: absolute;left: 565px;top:420px;"id="myImage1" src="redn.jpg" style="width:5px" width="35" height="3">
+
+
+<img style="position: absolute;left: 565px;top:510px;"id="myImage1" src="redn.jpg" style="width:5px" width="35" height="3">
+<img style="position: absolute;left: 565px;top:540px;"id="myImage1" src="redn.jpg" style="width:5px" width="35" height="3">
+<img style="position: absolute;left: 565px;top:570px;"id="myImage1" src="redn.jpg" style="width:5px" width="35" height="3">
+
+
+<img style="position: absolute;left: 408px;top:175px;"id="myImage1" src="redn.jpg" style="width:5px" width="23" height="2">
+<img style="position: absolute;left: 408px;top:198px;"id="myImage1" src="redn.jpg" style="width:5px" width="23" height="2">
+
+<img style="position: absolute;left: 408px;top:375px;"id="myImage1" src="redn.jpg" style="width:5px" width="23" height="2">
+<img style="position: absolute;left: 408px;top:398px;"id="myImage1" src="redn.jpg" style="width:5px" width="23" height="2">
+
+<img style="position: absolute;left: 408px;top:530px;"id="myImage1" src="redn.jpg" style="width:5px" width="23" height="2">
+<img style="position: absolute;left: 408px;top:555px;"id="myImage1" src="redn.jpg" style="width:5px" width="23" height="2">
+
+<img style="position: absolute;left: 795px;top:360px;"id="myImage1" src="redn.jpg" style="width:5px" width="35" height="3">
+<img style="position: absolute;left: 795px;top:390px;"id="myImage1" src="redn.jpg" style="width:5px" width="35" height="3">
+<img style="position: absolute;left: 795px;top:420px;"id="myImage1" src="redn.jpg" style="width:5px" width="35" height="3">
+
+
+<img style="position: absolute;left: 830px;top:475px;"id="myImage1" src="redn.jpg" style="width:5px" width="28" height="1">
+
+<img style="position: absolute;left: 875px;top:475px;"id="myImage1" src="redn.jpg" style="width:5px" width="28" height="1">
+ 
+ <img style="position: absolute;left: 925px;top:475px;"id="myImage1" src="redn.jpg" style="width:5px" width="28" height="1">
+ <img style="position: absolute;left: 830px;top:470px;"id="myImage1" src="redn.jpg" style="width:5px" width="125" height="1">
+
+    <div style="position:absolute;left:830px;top:270px;">
+        <p style="color:blue;font-size: 11px;" align="center"></p>
+          <img src="and2trs.png" width="140" height="210">
+          </div>
+
+          <div style="position:absolute;left:600px;top:120px;">
+        <p style="color:blue;font-size: 11px;" align="center"></p>
+          <img src="and2trs.png" width="150" height="225">
+          </div>
+          <div style="position:absolute;left:600px;top:270px;">
+        <p style="color:blue;font-size: 11px;" align="center"></p>
+          <img src="and2trs.png" width="140" height="210">
+          </div>
+          <div style="position:absolute;left:600px;top:420px;">
+        <p style="color:blue;font-size: 11px;" align="center"></p>
+          <img src="and2trs.png" width="140" height="210">
+          </div>
+          <div style="position:absolute;left:430px;top:118px;">
+        <p style="color:blue;font-size: 11px;" align="center"></p>
+          <img src="and2trs.png" width="75" height="112">
+          </div>
+           <div style="position:absolute;left:430px;top:320px;">
+        <p style="color:blue;font-size: 11px;" align="center"></p>
+          <img src="and2trs.png" width="75" height="112">
+          </div>
+
+          <div style="position:absolute;left:430px;top:475px;">
+        <p style="color:blue;font-size: 11px;" align="center"></p>
+          <img src="and2trs.png" width="75" height="112">
+          </div>
+
+   
+
+     
+    \
+        <!-- JS -->
+        <script src="jsplumb1.js"></script>
+        <!-- /JS -->
+		<!--  demo code -->
+		<script src="demo13.js"></script>
+<script>function dropdown() 
+{
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
+    </body>
+</html>

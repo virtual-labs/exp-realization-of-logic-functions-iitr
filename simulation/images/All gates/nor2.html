@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+    <head>
+
+        <title>And using Nor Gate</title>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <meta charset="UTF-8">
+  <meta name="description" content="EMF Generation">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <script src="graph.ob.js"></script>
+  <script src="graph_line_use.ob.js"></script>
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+
+        <!--<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">-->
+        <link href="//fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+
+      
+        <link rel="stylesheet" href="demo5.css">
+        
+        <style>
+
+
+          body{
+
+            -moz-transform: scale(0.85, 0.85); /* Moz-browsers */
+    zoom: 0.85; /* Other non-webkit browsers */
+    zoom: 85%; /* Webkit browsers */
+          }
+      </style>
+    </head>
+
+   <body data-demo-id="animation">
+    
+  <div id="wrapper" style="position:absolute; border: 2px solid #3385ff; top:0px;width:1300px;height:720px;left:0px">
+<div class="dropdown" style="left:5px; top:2px;">
+    <button onclick="dropdown()" class="dropbtn">INSTRUCTIONS
+    </button>
+     <div id="myDropdown" class="dropdown-content">
+      <a href="#home">  
+                    <b>1) Select and Drag "<img src="littledot.png" width="20" height="20" >" For Generate Wire.</b><br/><br/>
+                    <b>2) Join The Wires To Perform Required Logic.</b><br/><br/>
+                    <b>3) Click on check button to check the connections.</b><br/><br/>
+                    <b>4) If connections are wrong click on reset button to reset connections.</b><br/><br/>
+                    <b>5) Click on next button to perform next experiment.</b><br/><br/>
+      </a>
+    </div>
+</div>
+
+  <div style="position:absolute; font-size:13px;background-color: #3385ff;top:59px;left:5px;width:410px; height:40px;font-weight: bold;">
+    <p style="text-align:center; color:white;font-family: Verdana"> 
+      <b>Experiment to perform logic of And Using Nor on kit</b>
+    </p>
+  </div>
+     <div style="position:absolute; font-size:13px;background-color: #3385ff;top:130px;left:200px;width:100px; height:30px;font-weight: bold;">
+    <p style="text-align:center; color:white;font-family: Verdana"> 
+      <b>Y=A.B</b>
+    </p>
+  </div>
+
+        <div class="jtk-demo-main" >
+            <!-- demo -->
+            <div class="jtk-demo-canvas canvas-wide animation-demo jtk-surface jtk-surface-nopan" id="canvas">
+                <div class="littledot" id="ld1"></br></br><a href="#" class="cmdLink detach" rel="ld1">A</a></div>
+                <div class="littledot" id="ld2"></br></br><a href="#" class="cmdLink detach" rel="ld2"></a></div>
+                <div class="littledot" id="ld3"></br></br><a href="#" class="cmdLink detach" rel="ld3"></a></div>
+                <div class="littledot" id="ld4"></br></br><a href="#" class="cmdLink detach" rel="ld4">B</a></div>
+                <div class="littledot" id="ld5"></br></br><a href="#" class="cmdLink detach" rel="ld5"></a></div>
+                <div class="littledot" id="ld6"></br></br><a href="#" class="cmdLink detach" rel="ld6"></a></div>
+                <div class="littledot" id="ld7"></br></br><a href="#" class="cmdLink detach" rel="ld7"></a></div>
+                <div class="littledot" id="ld8"></br></br><a href="#" class="cmdLink detach" rel="ld8"></a></div>
+                <div class="littledot" id="ld9"></br></br><a href="#" class="cmdLink detach" rel="ld9"></a></div>
+                <div class="littledot" id="ld10"></br></br><a href="#" class="cmdLink detach" rel="ld10"></a></div>
+           
+<img style="position: absolute;left: 200px;top:160px;"id="myImage3" src="redn.jpg" style="width:5px" width="2" height="430">
+<img style="position: absolute;left: 200px;top:160px;"id="myImage3" src="redn.jpg" style="width:5px" width="950" height="2">
+<img style="position: absolute;left: 1150px;top:160px;"id="myImage3" src="redn.jpg" style="width:5px" width="2" height="430">
+<img style="position: absolute;left: 200px;top:590px;"id="myImage3" src="redn.jpg" style="width:5px" width="952" height="2">
+
+
+
+
+
+
+
+            <!-- /demo -->
+            <!-- explanation -->
+           
+            <!-- /explanation -->
+        </div>
+       <div style= " position:absolute;left:800px;top:595px;">
+            <button style="background: #2eb82e !important;height:30px; width:65px;" id="check-button" >Check</button>
+            <input style="background: #2eb82e !important;height:30px; width:65px;" id="reset" type="reset" onclick="window.location.href = 'nor2.html';" value="Reset">
+        </div>
+           </div>
+            <div style="position:absolute;left:935px;top:595px;">
+             <input style= "background: #2eb82e !important; height:30px; width:65px;" id = "button" type = "button" value = "PRINT" onclick="print()"></div>
+               
+        <div style="position:absolute; left:1000px; top:595px;">
+            <input style="background:#2eb82e  !important;height:30px; width:65px;" id="n" type="button" onclick="window.location.href = 'nor3.html';" value="Next" >
+        </div>
+
+
+
+
+
+<div style="position:absolute;left:1000px;top:280px;">
+
+        <p style="position: absolute;left: 35px; top: 12px">Y=A.B</p>
+</div>
+
+</div>
+            <div style="position:absolute;left:450px;top:190px;">
+        <p style="color:blue;font-size: 11px;" align="center"></p>
+          <img src="nor1.png" width="200" height="150">
+    </div>
+
+    <div style="position:absolute;left:450px;top:430px;">
+        <p style="color:blue;font-size: 11px;" align="center"></p>
+          <img src="nor1.png" width="200" height="150">
+    </div>
+
+<div style="position:absolute;left:800px;top:275px;">
+        <p style="color:blue;font-size: 11px;" align="center"></p>
+          <img src="nor1.png" width="200" height="150">
+    </div>
+</div>
+
+<script>function dropdown() 
+{
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+        <!-- JS -->
+        <script src="jsplumb1.js"></script>
+        <!-- /JS -->
+        <!--  demo code -->
+        <script src="demo5.js"></script>
+
+
+
+    </body>
+</html>

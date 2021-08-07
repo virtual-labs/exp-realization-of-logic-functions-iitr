@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta content="" name="description"/>
+    <meta content="" name="author"/>
+    <!-- For iPhone -->
+    <meta name="msapplication-TileColor" content="#4076e0">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#4076e0">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#4076e0">
+    <title>Virtual Labs</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css" integrity="sha512-Oy18vBnbSJkXTndr2n6lDMO5NN31UljR8e/ICzVPrGpSud4Gkckb8yUpqhKuUNoE+o9gAb4O/rAxxw1ojyUVzg==" crossorigin="anonymous" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/github-markdown.min.css" />
+    <link rel="stylesheet" href="./assets/css/vlabs-style.css" />
+    
+    <script src="./assets/js/jquery-3.4.1.slim.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+      integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      h1 {
+      font-size: 1.8rem;
+      }
+      h2 {
+      font-size: 1.4rem;
+      }
+      h3 {
+      font-size: 1.2rem;
+      }
+
+      h2, h3 {
+      font-weight: 800;
+      }
+    </style>
+  </head>
+  <body class="p-0 container-fluid vlabs-page d-flex flex-column justify-content-between">
+    <header class="vlabs-header sticky-top bg-white">
+      <nav class="p-0 navbar navbar-light d-flex align-items-stretch">
+        
+        <button class="navbar-toggler px-4"
+        	    type="button" onclick="toggle()">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="d-flex justify-content-center">        
+          <a href="http://vlab.co.in" class="navbar-brand">
+            <img src="./assets/images/vlabs-color-small-moe.jpg" alt="vlabs logo">
+          </a>
+        </div>
+        
+        <div id="headerNavbar" class="border-top flex-grow-1 d-flex align-items-center">
+          <ul class="navbar-nav ml-auto text-center d-flex flex-md-row">
+            <li class="nav-item px-2 m-1">
+              <a href="http://vlab.co.in">HOME</a>
+            </li>
+            <li class="nav-item px-2 m-1">
+              <a href="http://vlab.co.in/participating-institutes">PARTNERS</a>
+            </li>
+            <li class="nav-item px-2 m-1">
+              <a href="http://vlab.co.in/contact-us">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container-fluid flex-fill d-flex flex-column vlabs-page-main">
+      <div class="row flex-grow-1 px-4 d-flex flex-nowrap">
+        <div class="nav flex-column sidebar flex-shrink-0" id="menu">
+            <div>
+              <div class="d-flex">
+                <a href="index.html" class="p-2 ">
+                  Aim
+                </a>
+                
+              </div>
+              <div id="t-"
+                
+                   class="collapse" 
+                >
+                <div class="px-1 d-flex flex-column tasks">
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="d-flex">
+                <a href="theory.html" class="p-2  current-item ">
+                  Theory
+                </a>
+                
+              </div>
+              <div id="t-"
+                
+                   class="collapse" 
+                >
+                <div class="px-1 d-flex flex-column tasks">
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="d-flex">
+                <a href="pretest.html" class="p-2 ">
+                  Pretest
+                </a>
+                
+              </div>
+              <div id="t-"
+                
+                   class="collapse" 
+                >
+                <div class="px-1 d-flex flex-column tasks">
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="d-flex">
+                <a href="procedure.html" class="p-2 ">
+                  Procedure
+                </a>
+                
+              </div>
+              <div id="t-"
+                
+                   class="collapse" 
+                >
+                <div class="px-1 d-flex flex-column tasks">
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="d-flex">
+                <a href="simulation.html" class="p-2 ">
+                  Simulation
+                </a>
+                
+              </div>
+              <div id="t-"
+                
+                   class="collapse" 
+                >
+                <div class="px-1 d-flex flex-column tasks">
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="d-flex">
+                <a href="posttest.html" class="p-2 ">
+                  Posttest
+                </a>
+                
+              </div>
+              <div id="t-"
+                
+                   class="collapse" 
+                >
+                <div class="px-1 d-flex flex-column tasks">
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="d-flex">
+                <a href="references.html" class="p-2 ">
+                  References
+                </a>
+                
+              </div>
+              <div id="t-"
+                
+                   class="collapse" 
+                >
+                <div class="px-1 d-flex flex-column tasks">
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="d-flex">
+                <a href="feedback.html" class="p-2 ">
+                  Feedback
+                </a>
+                
+              </div>
+              <div id="t-"
+                
+                   class="collapse" 
+                >
+                <div class="px-1 d-flex flex-column tasks">
+                </div>
+              </div>
+            </div>
+        </div>        <div class="vlabs-page-content px-4 pb-4 flex-grow-1 markdown-body">
+          <div class="text-center">
+            <h2 id="realization-of-logic-functions-with-the-help-of-universal-gates-nand-and-nor-gate">Realization of logic functions with the help of universal gates NAND and NOR Gate</h2>
+        
+          </div>
+            <h3 id="introduction">Introduction</h3>
+        <p>Logic gates are electronic circuits which perform logical functions on one or more inputs to produce one output. There are seven logic gates. When all the input combinations of a logic gate are written in a series and their corrresponding outputs written along them, then this input/ output combination is called Truth Table.<br><br></p></p>
+        <h3 id="1nand-gate-as-universal-gate">1)Nand gate as Universal gate</h3>
+        <br>
+        NAND gate is actually a combination of two logic gates i.e. AND gate followed by NOT gate. So its output is complement of the output of an AND gate.This gate can have minimum two inputs. By using only NAND gates, we can realize all logic functions: AND, OR, NOT, Ex-OR, Ex-NOR, NOR. So this gate is also called as universal gate.
+                            
+        
+        <h4 id="11nand-gates-as-or-gate">1.1)NAND gates as OR gate</h4>
+        <p>From DeMorgan’s theorems: <br>(A.B)’ = A’ + B’<br>(A’.B’)’ = A’’ + B’’ = A + B
+        <br>So, give the inverted inputs to a NAND gate, obtain OR operation at output.<br></p>
+        <center><img src="images/gate/nand3.png" align="center" width="330" height="150"><br> <b>Figure-1:NAND gates as OR gate</b></center><br>
+        <center><img src="images/gate/nandt3.png" align="center" width="305" height="200"> <br><b>Figure-2:Truth table of OR</b></center><br>
+        
+        
+        
+        <h4 id="12nand-gates-as-and-gate">1.2)NAND gates as AND gate</h4>
+        <p>A NAND produces complement of AND gate. So, if the output of a NAND gate is inverted, overall output will be that of an AND gate.<br><center><b>Y = ((A.B)’)’</b><br><b>Y = (A.B)</b></center><br></p>
+        <center><img src="images/gate/nand2.png" align="center" width="300" height="100"> <br><b>Figure-3:NAND gates as AND gate</b></center><br>
+        <center><img src="images/gate/nandt2.png" align="center" width="345" height="250"> <br><b>Figure-4:Truth table of AND</b></center><br>
+        
+        
+        
+        <h4 id="13nand-gates-as-ex-or-gate">1.3)NAND gates as Ex-OR gate</h4>
+        <p>The output of a two input Ex-OR gate is shown by: Y = A’B + AB’. This can be achieved with the logic diagram shown in the left side.<br></p>
+        <center><img src="images/gate/nand4.png" align="center" width="355" height="250"> <br><b>Figure-5:NAND gate as Ex-OR gate</b></center><br>
+        
+        <center><img src="images/gate/nandt4.png" align="center" width="355" height="250"> <br><b>Figure-6:Truth table of Ex-OR</b></center><br>
+        
+        
+        <h4 id="14nand-gates-as-ex-nor-gate">1.4)NAND gates as Ex-NOR gate</h4>
+        <p>Ex-NOR gate is actually Ex-OR gate followed by NOT gate. So give the output of Ex-OR gate to a NOT gate, overall output is  that of an Ex-NOR gate.<br><center><b> Y = AB+ A’B’</b></center></p>
+        <br>
+        <center> <img src="images/gate/nand5.png" align="center" width="380" height="180"><br><b>Figure-7:NAND gates as Ex-NOR gate</b></center><br>
+        <center><img src="images/gate/nandt5.png"align="center"  width="250" height="190"> <br><b>Figure-8:Truth table of Ex-NOR</b></center><br>
+        
+        
+        
+        <p></b></p> </p>
+        <br>
+        
+        <h4 id="15-implementing-the-simplified-function-with-nand-gates-only">1.5) Implementing the simplified function with NAND gates only</h4>
+        <p>We can now start constructing the circuit. First note that the entire expression is inverted and we have three terms ANDed. This means that we must use a 3-input NAND gate. Each of the three terms is, itself, a NAND expression. Finally, negated single terms can be generates with a 2-input NAND gate acting as an inverted. The expression illustrates a circuit using NAND gates only.<br>
+        <br><center><b>F=((C&#39;.B.A)&#39;(D&#39;.C.A)&#39;(C.B&#39;.A)&#39;)&#39; </b> </center><br><br>
+        The stepwise simplication of this expression is done on the basis of this logic diagram in Figure 9: <br> <br></p>
+        <center><img src="images/gate/nand6.png"  align="center" width="580" height="280"> <br> <br> <b>Figure-9:Implementing the simplified function with NAND gates only</b></center><br>
+        
+        
+        <p></b></p> </p>
+        <h3 id="2nor-gate-as-universal-gate">2)Nor gate as Universal Gate</h3>
+        <p>NOR gate is actually a combination of two logic gates: OR gate followed by NOT gate. So its output is complement of the output of an OR gate.This gate can have minimum two inputs, output is always one. By using only NOR gates, we can realize all logic functions: AND, OR, NOT, Ex-OR, Ex-NOR, NAND. So this gate is also called universal gate.</p><br></p>
+        <h4 id="21nor-gates-as-or-gate">2.1)NOR gates as OR gate</h4>
+        <p>A NOR produces complement of OR gate. So, if the output of a NOR gate is inverted, overall output will be that of an OR gate.<br><center><b>Y = ((A+B)’)’<br> Y = (A+B)</b><br><br></center></p>
+        <center><img src="images/gate/nor2.png" align="center" width="230" height="100"><br><b> Figure-10:NOR gates as OR gate</b><br></center>
+        <center><img src="images/gate/nandt3.png" align="center" width="325" height="210"> <br><b>Figure-11:Truth table of OR</b><br></center>
+        
+        
+        
+        <h4 id="22nor-gates-as-and-gate">2.2)NOR gates as AND gate</h4>
+        <p>From DeMorgan’s theorems: <br>(A+B)’ = A’B’<br>(A’+B’)’ = A’’B’’ = AB<br>So, give the inverted inputs to a NOR gate, obtain AND operation at output.<br></p>
+        <center><img src="images/gate/nor3.png" align="center" width="280" height="150"> <br><b>Figure-12:NOR gates as AND gate</b><br></center>
+        <center><img src="images/gate/nandt2.png" align="center" width="325" height="210"> <br><b>Figure-13:Truth table of AND</b><br></center>
+        
+        
+        <h4 id="23nor-gates-as-ex-or-gate">2.3)NOR gates as Ex-OR gate</h4>
+        <p>Ex-OR gate is actually Ex-NOR gate followed by NOT gate. So give the output of Ex-NOR gate to a NOT gate, overall output is that of an Ex-OR gate.<br>Y = A’B+ AB’</center><br></p>
+        <center><img src="images/gate/nor5.png" align="center" width="380" height="200"> <br><b>Figure-14:NOR gates as Ex-OR gate</b></center><br>
+        <center><img src="images/gate/nandt4.png" align="center" width="305" height="210"> <br><b>Figure-15:Truth table of Ex-OR</b></center><br>
+        
+        
+        
+        <h4 id="24nor-gates-as-ex-nor-gate">2.4)NOR gates as Ex-NOR gate</h4>
+        <p>The output of a two input Ex-NOR gate is shown by: Y = AB + A’B’. This can be achieved with the logic diagram shown in the left side.<br></p>
+        <center><img src="images/gate/ex2.PNG" align="center" width="500" height="400"> </center>
+        <center><img src="images/gate/nor4.png" align="center" width="380" height="200">  <br><b>Figure-16:NOR gates as Ex-NOR gate </b></center><br>
+        
+        
+        <center><img src="images/gate/nandt5.png" align="center" width="305" height="210"><br><b>Figure-17:Truth table of Ex-NOR </b></center> <br>
+        
+        
+        
+        
+        <h4 id="25constructing-a-circuit-with-nor-gates-only">2.5)Constructing a circuit with NOR gates only</h4>
+        <p>Designing a circuit with NOR gates only uses the same basic techniques as designing a circuit with NAND gates; that is, the application of deMorgan’s theorem. The only difference between NOR gate design and NAND gate design is that the former must eliminate product terms and the later must eliminate sum terms.<br><center><b>F=(((C.B&#39;.A)+(D.C&#39;.A)+(C.B&#39;.A))&#39;)&#39;  </b></center><br></p>
+        <center><img src="images/gate/nor6.png" align="center" width="580" height="300"> <br>
+         <b>Figure-18:Implementing the simplified function with NOR gates only</b></center> <br>
+        
+        
+        
+        
+        
+        
+        </div>
+      </div>
+    </div>
+    <footer class="text-light pt-2 vlabs-footer d-flex flex-column">
+      <div class="row px-5">
+        <div class="col d-flex flex-column">
+          <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Community Links</span>
+          <a href="http://www.sakshat.ac.in/" class="text-light">Sakshat Portal</a>
+          <a href="http://outreach.vlabs.ac.in/" class="text-light">Outreach Portal</a>
+          <a href="http://vlab.co.in/faq" class="text-light">FAQ: Virtual Labs</a>
+        </div>
+        <div class="col d-flex flex-column">
+          <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Contact Us</span>
+          <span> Phone: General Information: 011-26582050 </span>
+          <span> Email: support@vlabs.ac.in </span>
+        </div>
+        <div class="col d-flex flex-column">
+          <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Follow Us</span>
+          <div class="social-links">
+    	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #55acee;" href="https://twitter.com/TheVirtualLabs">
+    	  <i class="fa fa-twitter"></i>
+    	</a>
+    	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #3b5998;" href="https://www.facebook.com/Virtual-Labs-IIT-Delhi-301510159983871/">
+    	  <i class="fa fa-facebook"></i>
+    	</a>
+    	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #e52d27;" href="https://www.youtube.com/watch?v=asxRaOgk6a0">
+    	  <i class="fa fa-youtube"></i>
+    	</a>
+    	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #2867B2;" href="https://in.linkedin.com/in/virtual-labs-008ba9136">
+    	  <i class="fa fa-linkedin"></i>
+    	</a>
+          </div>
+        </div>
+      </div>
+      <div class="m-0 py-2 text-center" style='font-family: "Open Sans", sans-serif; background: #212121;'>
+        <a class="text-primary font-weight-bold" href="https://www.gnu.org/licenses/agpl-3.0.en.html"> AGPL 3.0 </a>
+        &nbsp;&amp;&nbsp;
+        <a class="text-primary font-weight-bold" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Creative Commons (CC BY-NC-SA 4.0) </a>
+      </div>
+    </footer>
+
+      <script src="./assets/js/toggleSidebar.js"></script>
+      
+  </body>
+</html>
